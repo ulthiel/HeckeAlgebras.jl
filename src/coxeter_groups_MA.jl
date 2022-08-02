@@ -1,3 +1,6 @@
+# By M. Albert (2022)
+# Meine Version von Joel Gibsons Implementierung von Coxeter Gruppen.
+
 module Coxeter_groups_MA
 export CoxGrp, CoxElt, lexword, rank, gens, coxeter_group_mat, CoxEltMat, right_descent_set, left_descent_set, parent, mult_gen, to_cartan_matrix
 

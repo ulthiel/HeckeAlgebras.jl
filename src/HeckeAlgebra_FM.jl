@@ -1,3 +1,5 @@
+# By M. Albert (2022)
+# Implementierung der Hecke Algebra, die auf coxeter_groups_MA aufbaut und einen allgemeinen Teil für beliebige freie Moduln besitzt.
 using JuLie
 include("coxeter_groups_MA.jl")
 using Main.Coxeter_groups_MA
@@ -89,7 +91,7 @@ To use this interface the following needs to be done:
             return A["a"] + A["b"] + A["c"]
         end
     end
-    
+
     function _ToBasis(B::ABCModuleBasis2, A::ABCModuleBasis, w::String)
         if w == "a"
             return B["a"]
@@ -494,7 +496,7 @@ abstract type BasisHeckeStd <: FreeModuleBasis{LaurentPolyWrapRing{Nemo.fmpz, Ne
 end
 
 # Default basis of a FreeMod{LaurentPolyWrapRing{Nemo.fmpz, Nemo.FmpzPolyRing}, LaurentPolyWrap{Nemo.fmpz, Nemo.fmpz_poly, LaurentPolyWrapRing{Nemo.fmpz, Nemo.FmpzPolyRing}}, CoxGrp, CoxElt}
-# is the standard basis. 
+# is the standard basis.
 DefaultBasis(FMod::FreeMod{LaurentPolyWrapRing{Nemo.fmpz, Nemo.FmpzPolyRing}, LaurentPolyWrap{Nemo.fmpz, Nemo.fmpz_poly, LaurentPolyWrapRing{Nemo.fmpz, Nemo.FmpzPolyRing}}, CoxGrp, CoxElt}) = StandardBasis(FMod)
 
 # (M, eltM) is an element inside a right module over the Hecke algebra (either the algebra itself,

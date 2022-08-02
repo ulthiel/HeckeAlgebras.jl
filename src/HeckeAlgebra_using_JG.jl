@@ -1,3 +1,5 @@
+# By M. Albert (2022)
+# Implementierung der Hecke Algebra, die auf coxeter_groups_MA aufbaut.
 using JuLie
 include("coxeter_groups_MA.jl")
 using Main.Coxeter_groups_MA
