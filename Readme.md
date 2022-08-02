@@ -63,3 +63,4 @@ julia> H:K[2]
 
 ## Todo
 
+See [here](https://github.com/ulthiel/HeckeAlgebras.jl/issues/1).
